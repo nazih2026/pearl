@@ -4,73 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEARL - Contact Us | Islamic clothing and fashionwear</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- MAIN bar: left menu + right content -->
-    <table width="100%" cellpadding="0" cellspacing="0">
-        <tr>
-            <!-- LEFT COLUMN: Navigation menu-->
-            <td width="20%" valign="top" bgcolor="#f5f5f5">
-                <ul style="list-style-type: none; margin-top: 40px;">
-                    <li style="margin-bottom: 15px;"><a href="index.html">Home</a></li>
-                    <li style="margin-bottom: 15px;"><a href="aboutus.html">About Us</a></li>
-                    <li style="margin-bottom: 15px;"><a href="products.html">Products</a></li>
-                    <li style="margin-bottom: 15px;"><a href="enquire.html">Enquire</a></li>
-                    <li style="margin-bottom: 15px;"><a href="contactus.html">Contact Us</a></li>
-                </ul>
-            </td>
+    <!-- Main container using CSS Grid -->
+    <div class="container">
+        
+        <!-- LEFT SIDEBAR: Hamburger menu + Navigation -->
+        <div class="sidebar">
+            <!-- Hidden checkbox to toggle menu -->
+            <input type="checkbox" id="menu-toggle">
+            <!-- Hamburger icon (label) -->
+            <label for="menu-toggle" class="hamburger">☰</label>
+            
+            <!-- Navigation menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquire.html">Enquire</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
 
-            <!-- RIGHT COLUMN: Logo + Contact Us content -->
-            <td width="80%" valign="top">
+        <!-- RIGHT CONTENT: Logo + Contact Information -->
+        <div class="main-content">
+            
+            <!-- PEARL Logo Section (Clickable - takes you to Home) -->
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>PEARL</h1>
+                    <p>Islamic clothing and fashionwear</p>
+                </a>
+            </div>
 
-                <!-- PEARL LOGO SECTION -->
-                <div style="text-align: center; padding: 40px 20px 20px 20px; background-color:bisque;">
-                    <h1 style="font-size: 80px; margin: 0;">PEARL</h1>
-                    <p style="font-size: 18px; color: #666; margin-top: 10px;">Islamic clothing and fashionwear</p>
-                </div>
+            <!-- Contact Us Content Area -->
+            <div style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
+                
+                <!-- Page Title -->
+                <h1 class="about-heading">Contact Us</h1>
 
-                <!-- Contact Us Content Area -->
-                <div style="padding: 40px; padding-left: 80px;">
+                <!-- Contact Information Block -->
+                <div class="contact-block">
+                    
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <strong>📞 Phone:</strong><br>
+                        <span>+27 12 345 6789</span>
+                    </div>
 
-                    <!-- Page Title -->
-                    <h1 style="font-size: 48px; margin-top: 0; margin-bottom: 40px;">Contact Us</h1>
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <strong>✉️ Email:</strong><br>
+                        <span>info@pearlmodest.com</span>
+                    </div>
 
-                    <!-- Contact Information Block -->
-                    <div style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 30px; max-width: 500px; background-color:bisque;">
-                        
-                        <!-- Phone -->
-                        <div style="margin-bottom: 25px;">
-                            <strong style="font-size: 20px;">📞 Phone:</strong><br>
-                            <span style="font-size: 18px; color: #333;">+27 73 909 6906</span>
-                        </div>
-
-                        <!-- Email -->
-                        <div style="margin-bottom: 25px;">
-                            <strong style="font-size: 20px;">✉️ Email:</strong><br>
-                            <span style="font-size: 18px; color: #333;">info@pearlmodest.com</span>
-                        </div>
-
-                        <!-- Address -->
-                        <div>
-                            <strong style="font-size: 20px;">📍 Address:</strong><br>
-                            <span style="font-size: 18px; color: #333; line-height: 1.5;">
-                                Shop No.6 & 7 Grand Center West<br>
-                                Lenasia<br>
-                                Johannesburg<br>
-                                1821<br>
-                                South Africa
-                            </span>
-                        </div>
-
+                    <!-- Address -->
+                    <div class="contact-item">
+                        <strong>📍 Address:</strong><br>
+                        <span>
+                            45 Grand Center West<br>
+                            lenasia<br>
+                            Johannesburg<br>
+                            1821<br>
+                            South Africa
+                        </span>
                     </div>
 
                 </div>
 
-            </td>
-        </tr>
-    </table>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
