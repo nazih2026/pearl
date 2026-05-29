@@ -3,64 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PEARL - About Us | Islamic clothing and fashionwear </title>
+    <title>PEARL - About Us | Islamic clothing and fashionwear</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- MAIN bar: left menu + right content -->
-    <table width="100%" cellpadding="0" cellspacing="0">
-        <tr>
-            <!-- LEFT COLUMN: Navigation menu -->
-            <td width="20%" valign="top" bgcolor="#f5f5f5">
-                <ul style="list-style-type: none; margin-top: 40px;">
-                    <li style="margin-bottom: 15px;"><a href="index.html">Home</a></li>
-                    <li style="margin-bottom: 15px;"><a href="aboutus.html">About Us</a></li>
-                    <li style="margin-bottom: 15px;"><a href="products.html">Products</a></li>
-                    <li style="margin-bottom: 15px;"><a href="enquire.html">Enquire</a></li>
-                    <li style="margin-bottom: 15px;"><a href="contactus.html">Contact Us</a></li>
-                </ul>
-            </td>
+    <!-- Main container using CSS Grid -->
+    <div class="container">
+        
+        <!-- LEFT SIDEBAR: Hamburger menu + Navigation -->
+        <div class="sidebar">
+            <!-- Hidden checkbox to toggle menu -->
+            <input type="checkbox" id="menu-toggle">
+            <!-- Hamburger icon (label) -->
+            <label for="menu-toggle" class="hamburger">☰</label>
+            
+            <!-- Navigation menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquire.html">Enquire</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
 
-            <!-- RIGHT COLUMN: Logo + About Us content -->
-            <td width="80%" valign="top">
+        <!-- RIGHT CONTENT: Logo + About Us content -->
+        <div class="main-content">
+            
+            <!-- PEARL Logo Section (Clickable - takes you to Home) -->
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>PEARL</h1>
+                    <p>Islamic clothing and fashionwear</p>
+                </a>
+            </div>
 
-                <!-- PEARL LOGO SECTION -->
-                <div style="text-align: center; padding: 40px 20px 20px 20px; background-color:bisque;">
-                    <h1 style="font-size: 80px; margin: 0;">PEARL</h1>
-                    <p style="font-size: 18px; color: #666; margin-top: 10px;">Islamic clothing and fashionwear </p>
+            <!-- About Us Content Area -->
+            <div class="about-content">
+                
+                <!-- Page Title -->
+                <h1 class="about-heading">About Us</h1>
+
+                <!-- Who We Are -->
+                <div class="about-block">
+                    <h2>Who We Are</h2>
+                    <p>Pearl Islamic clothing and fashionwear was established in 2015 with the aim of providing high-quality modest fashion and Islamic attire that reflects both faith and contemporary style. The business was founded in response to a growing demand for clothing that aligns with Islamic values of modesty while remaining fashionable and accessible.</p>
                 </div>
 
-                <!-- About Us Content Area -->
-                <div style="padding: 40px; padding-left: 80px;">
-
-                    <!-- Page Title -->
-                    <h1 style="font-size: 48px; margin-top: 0; margin-bottom: 40px; text-align: center;">About Us</h1>
-
-                    <!-- Who We Are -->
-                    <div style="margin-bottom: 40px;">
-                        <h2 style="font-size: 28px; margin-top: 0; margin-bottom: 10px;">Who We Are</h2>
-                        <p style="font-size: 18px; line-height: 1.6; margin: 0;">Pearl Islamic clothing and fashionwear was established in 2018 with the aim of providing high-quality modest fashion and Islamic attire that reflects both faith and contemporary style. The business was founded in response to a growing demand for clothing that aligns with Islamic values of modesty while remaining fashionable and accessible</p>
-                    </div>
-
-                    <!-- Vision -->
-                    <div style="margin-bottom: 40px;">
-                        <h2 style="font-size: 28px; margin-top: 0; margin-bottom: 10px;">Vision</h2>
-                        <p style="font-size: 18px; line-height: 1.6; margin: 0;"> To become a leading global destination for modest fashion and Islamic attire, where individuals can confidently express their identity through clothing that is both modest and stylish.</p>
-                    </div>
-
-                    <!-- Mission -->
-                    <div style="margin-bottom: 40px;">
-                        <h2 style="font-size: 28px; margin-top: 0; margin-bottom: 10px;">Mission</h2>
-                        <p style="font-size: 18px; line-height: 1.6; margin: 0;">Our mission is to provide a diverse range of high-quality, affordable modest fashion that aligns with Islamic values while embracing modern trends. We aim to create a seamless and enjoyable shopping experience through our platforms, ensuring accessibility, convenience, and customer satisfaction. By promoting the belief that one can be both modest and fashionable, we strive to empower individuals and build a trusted brand within the growing modest fashion industry.</p>
-                    </div>
-
-                   
-
+                <!-- Vision -->
+                <div class="about-block">
+                    <h2>Vision</h2>
+                    <p>To become a leading global destination for modest fashion and Islamic attire, where individuals can confidently express their identity through clothing that is both modest and stylish. Pearl Islamic clothing and fashionwear has set its sights on becoming the world's largest online retailer of premium quality apparel and accessories.</p>
                 </div>
 
-            </td>
-        </tr>
-    </table>
+                <!-- Mission -->
+                <div class="about-block">
+                    <h2>Mission</h2>
+                    <p>Our mission is to provide a diverse range of high-quality products that cater to the needs of our customers. We aim to create a seamless and enjoyable shopping experience through our platforms, ensuring accessibility, convenience, and customer satisfaction.</p>
+                </div>
+
+        
+
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
