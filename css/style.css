@@ -384,3 +384,10 @@ img {
     border-radius: 10px;
     line-height: 1.6;
 }
+/* Add bisque background behind product grid - NO image changes */
+.product-grid {
+    background-color: bisque; /* Bisque background only */
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
